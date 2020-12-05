@@ -30,6 +30,27 @@ Part1:
 	fmt.Println(entry2)
 	fmt.Println(entry1 * entry2)
 
+	// Part 2
+	fmt.Println()
+	var entry3 int
+Part2:
+	for n, entry1 = range entries {
+		for _, entry2 = range entries[n:] {
+			if entry1+entry2 < sum {
+				for _, entry3 = range entries[n+1:] {
+					if entry1+entry2+entry3 == sum {
+						break Part2
+					}
+				}
+			}
+		}
+	}
+
+	fmt.Println(entry1)
+	fmt.Println(entry2)
+	fmt.Println(entry3)
+	fmt.Println(entry1 * entry2 * entry3)
+
 	os.Exit(0)
 }
 
