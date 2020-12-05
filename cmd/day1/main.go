@@ -26,8 +26,8 @@ Part1:
 		}
 	}
 
-	fmt.Println(entry1)
-	fmt.Println(entry2)
+	// fmt.Println(entry1)
+	// fmt.Println(entry2)
 	fmt.Println(entry1 * entry2)
 
 	// Part 2
@@ -46,9 +46,9 @@ Part2:
 		}
 	}
 
-	fmt.Println(entry1)
-	fmt.Println(entry2)
-	fmt.Println(entry3)
+	// fmt.Println(entry1)
+	// fmt.Println(entry2)
+	// fmt.Println(entry3)
 	fmt.Println(entry1 * entry2 * entry3)
 
 	os.Exit(0)
